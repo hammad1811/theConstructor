@@ -554,7 +554,6 @@ body {
 }
 
 
-
 .footer-socials {
   display: flex;
   justify-content: center;
@@ -623,7 +622,7 @@ body {
 }
 
 .footer-col p {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   line-height: 100%;
   color: #8F8F8F;
   font-weight: 500;
@@ -636,7 +635,7 @@ body {
 }
 
 .sub-col p {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   line-height: 100%;
   color: #8F8F8F;
   font-weight: 500;
@@ -690,7 +689,7 @@ body {
 
 .footer-nav a {
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   text-decoration: none;
   text-transform: uppercase;
   line-height: 100%;
@@ -702,7 +701,7 @@ body {
 }
 
 .copyright {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: white;
 }
 
@@ -718,11 +717,15 @@ body {
   align-items: flex-end;
 }
 
+.footer-right a{
+  text-decoration: none;
+}
 
 .footer-col i {
   font-size: 1.2rem;
   color: white;
 }
+
 
 
 
