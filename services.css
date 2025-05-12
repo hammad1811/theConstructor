@@ -473,7 +473,6 @@ body {
   color: #000000;
   width: 100%;
   overflow: hidden;
-  text-overflow: ellipsis;
   display: flex;
   align-items: start;
 }
@@ -1066,8 +1065,12 @@ body {
 
 .card-content h2 {
   font-size: 1.7rem;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
+  overflow: scroll;
+   overflow: auto; /* Enable scrolling */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 .card-content p {
