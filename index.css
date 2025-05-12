@@ -1556,7 +1556,7 @@ body {
     height: auto;
     gap: 1.875rem;
     padding: 0%;
-    width: 80%;
+    width: 90%;
   }
 
   .who-we-are-heading {
@@ -1586,7 +1586,7 @@ body {
   .vision {
     flex-direction: column;
     gap: 2.5rem;
-    width: 80%;
+    width: 90%;
     padding: 0;
   }
 
