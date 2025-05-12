@@ -386,7 +386,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 17.375rem;
+  height: auto;
 }
 
 .who-we-are-heading {
@@ -420,7 +420,7 @@ body {
   line-height: 1.3rem;
   letter-spacing: 0%;
   text-align: center;
-  height: 8.75rem;
+  height: auto;
   width: 100%;
   color: #8F8F8F;
 }
@@ -1030,7 +1030,7 @@ body {
 
 .testimonial-section {
   padding: 3.75rem 1.25rem;
-  height: 37.5rem;
+  height: auto;
   width: 100%;
   text-align: center;
   display: flex;
@@ -1571,7 +1571,7 @@ body {
   }
 
   .who-we-are-heading span {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 0.2025rem;
   }
 
@@ -1579,7 +1579,7 @@ body {
     line-height: 1.4;
     height: auto;
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.2rem;
   }
 
@@ -1587,6 +1587,7 @@ body {
     flex-direction: column;
     gap: 2.5rem;
     width: 80%;
+    padding: 0;
   }
 
   .vision-left,
@@ -1605,7 +1606,7 @@ body {
   }
 
   .vision-paragraph {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.2rem;
   }
 
@@ -1663,7 +1664,7 @@ body {
 
   .process-heading p {
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.2rem;
     letter-spacing: 0%;
     color: #8F8F8F;
@@ -1725,7 +1726,7 @@ body {
   }
 
   .services-text p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.2rem;
     text-align: center;
     margin-bottom: 0.9375rem;
@@ -1753,7 +1754,7 @@ body {
     font-weight: 500;
     line-height: 1.2rem;
     letter-spacing: 0%;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
 
@@ -1769,7 +1770,7 @@ body {
     height: auto;
     line-height: 1.2rem;
     margin-bottom: 1.875rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .ceo-cards {
@@ -1801,7 +1802,7 @@ body {
   }
 
   .message {
-    font-size: 0.8rem !important ;
+    font-size: 0.9rem !important ;
     line-height: 1.2rem;
     padding-top: 0.625rem;
   }
@@ -1909,7 +1910,7 @@ body {
   .view-all-btn {
     padding: 0.3125rem 0.625rem;
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 120%;
     height: 2.0625rem;
     width: auto;
@@ -1932,6 +1933,7 @@ body {
 
 .testimonial-section {
   padding: 0%;
+  padding-top: 20px;
   height: auto;
   padding-bottom: 1.25rem;
 }
@@ -1943,7 +1945,7 @@ body {
 
 .testimonial-header p {
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 0%;
   line-height: 160%;
   font-weight: 400;
@@ -1971,7 +1973,7 @@ body {
 
 .testimonial-card p {
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 160%;
   letter-spacing: 0%;
   font-weight: 500;
@@ -1998,7 +2000,7 @@ body {
 }
 
 .client-info strong {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   display: flex;
 }
 
@@ -2328,7 +2330,7 @@ body {
   .hero-button1,
   .hero-button2 {
     width: 100%;
-    font-size: 0.83rem;
+    font-size: 0.9rem;
     padding: 10px 10px;
     /* white-space: nowrap; */
   }
@@ -2383,7 +2385,7 @@ body {
   }
 
   .step-content p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.4;
   }
 

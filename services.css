@@ -408,7 +408,7 @@ body {
 }
 
 .offers-main-heading h1 {
-  font-size: 3.2rem;
+  font-size: 2.75rem;
   font-weight: 500;
   line-height: 3.375rem;
   letter-spacing: 0%;
@@ -416,7 +416,7 @@ body {
 }
 
 .offers-main-heading p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.75rem;
   letter-spacing: 0%;
@@ -479,9 +479,9 @@ body {
 }
 
 .card-content p {
-  font-size: 0.8125rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  line-height: 137%;
+  line-height: 1.2rem;
   letter-spacing: 0%;
   color: #8F8F8F;
 }
@@ -529,7 +529,7 @@ body {
 .record-info h1 {
   color: #FFFFFF;
   font-weight: 700;
-  font-size: 1.875rem;
+  font-size: 2.75rem;
   line-height: 100%;
   letter-spacing: 0%;
 }
@@ -537,7 +537,7 @@ body {
 .record-info h2 {
   color: #FFB600;
   font-weight: 500;
-  font-size: 1.5625rem;
+  font-size: 1.5rem;
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
@@ -547,7 +547,7 @@ body {
   color: #FFFFFF;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.375rem;
+  line-height: 1.3rem;
   letter-spacing: 0%;
   text-align: center;
   width: 100%;
@@ -585,15 +585,15 @@ body {
 .more-services-heading h1 {
   color: #222222;
   font-weight: 500;
-  font-size: 3.5rem;
-  line-height: 3rem;
+  font-size: 2.75rem;
+  line-height: 1.85rem;
   letter-spacing: 0%;
 }
 
 .more-services-heading p {
   color: #616161;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 100%;
   letter-spacing: 0%;
 }
@@ -625,7 +625,7 @@ body {
 .more-service-item h3 {
   color: #222222;
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   line-height: 100%;
   letter-spacing: 0%;
   white-space: nowrap;
@@ -637,7 +637,7 @@ body {
   width: 100%;
   color: #616161;
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.8075rem;
   letter-spacing: 0%;
 }
@@ -1033,7 +1033,7 @@ body {
 }
 
 .offers-main-heading p {
-  font-size: 1.125rem;
+  font-size: 0.9rem;
   line-height: 1.4;
   text-align: center;
 }
@@ -1065,13 +1065,13 @@ body {
 }
 
 .card-content h2 {
-  font-size: 1.5625rem;
+  font-size: 1.7rem;
   text-align: center;
   white-space: nowrap;
 }
 
 .card-content p {
-  font-size: 1.125rem;
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 
@@ -1106,18 +1106,18 @@ body {
 }
 
 .record-info h1 {
-  font-size: 2.1875rem;
+  font-size: 2rem;
 }
 
 .record-info h2 {
-  font-size: 1.75rem;
+  font-size: 1.7rem;
 }
 
 .record-info p {
   width: 100%;
   height: auto;
-  font-size: 1.125rem;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
 }
 
 
@@ -1147,13 +1147,13 @@ body {
   }
 
   .more-services-heading h1 {
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.2;
     text-align: center;
   }
 
   .more-services-heading p {
-    font-size: 18px;
+    font-size: 0.9rem;
     text-align: center;
   }
 
@@ -1177,12 +1177,12 @@ body {
   }
 
   .more-service-item h3 {
-    font-size: 24px;
+    font-size: 1.7rem;
     white-space: normal;
   }
 
   .more-service-item p {
-    font-size: 16px;
+    font-size: 0.9rem;
     line-height: 1.5;
     padding: 0 10px;
   }
