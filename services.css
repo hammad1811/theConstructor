@@ -230,7 +230,6 @@ body {
   text-decoration: none;
   color: white;
   display: inline-block;
-  padding: 0.9375rem 1.25rem;
 }
 
 
@@ -1604,21 +1603,11 @@ body {
     font-size: 0.9rem;
   }
 
-  .footer-socials {
-    width: 60%;
-    gap: 1rem;
-  }
-
   
-.footer-socials a {
-  height: 1.8rem;
-  width: 1.8rem;
+.footer-socials {
+padding: 10px 0%;
 }
 
-
-.footer-socials i {
-  font-size: 0.8rem;
-}
   .footer-columns {
     width: 85%;
     gap: 1rem;
