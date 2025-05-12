@@ -376,3 +376,47 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+
+
+
+// Get all project-info-icon elements
+const projectIcons = document.querySelectorAll(".project-info-icon img");
+const modal = document.createElement("div");
+modal.className = "modal";
+
+// Modal structure
+modal.innerHTML = `
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <img src="" alt="Full Project Image">
+  </div>
+`;
+
+document.body.appendChild(modal);
+
+// References
+const modalImage = modal.querySelector("img");
+const modalClose = modal.querySelector(".modal-close");
+
+// Show Modal on Click
+projectIcons.forEach(icon => {
+  icon.addEventListener("click", (e) => {
+    const imgSrc = e.target.closest(".project-card").querySelector("img").src;
+    modalImage.src = imgSrc; // Set the image source
+    modal.style.display = "flex"; // Show modal
+  });
+});
+
+// Close Modal on Click
+modalClose.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Close Modal on Background Click
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
