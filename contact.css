@@ -108,6 +108,13 @@ body {
   align-items: center;
   white-space: nowrap;
 }
+  .logo-image a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
 .logo-image img {
   width: auto;

@@ -112,6 +112,13 @@ body {
   align-items: center;
   white-space: nowrap;
 }
+  .logo-image a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
 .logo-image img {
   width: auto;
@@ -818,7 +825,7 @@ body {
 .projects-section {
   text-align: center;
   background-color: #1D1D1D;
-  padding: 5rem 0%;
+  padding: 4rem 0%;
   color: #fff;
   width: 100%;
   display: flex;
@@ -1029,7 +1036,7 @@ body {
 
 
 .testimonial-section {
-  padding: 3.75rem 1.25rem;
+  padding: 2rem 1.25rem;
   height: auto;
   width: 100%;
   text-align: center;

@@ -112,6 +112,13 @@ body {
   align-items: center;
   white-space: nowrap;
 }
+  .logo-image a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
 .logo-image img {
   width: auto;
@@ -791,7 +798,7 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 2.75rem;
-  margin-bottom: 6.25rem;
+  margin-bottom: 3rem;
 }
 
 .our-service-heading {

@@ -113,6 +113,13 @@ body {
   align-items: center;
   white-space: nowrap;
 }
+  .logo-image a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
 .logo-image img {
   width: auto;
@@ -569,12 +576,12 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 3.75rem;
+  gap: 2rem;
 }
 
 .more-services-heading {
   width: 80%;
-  height: 6.9232rem;
+  height: auto;
   gap: 0.8606rem;
   display: flex;
   flex-direction: column;
@@ -1140,7 +1147,6 @@ body {
   .more-services-container {
     width: 100%;
     height: auto;
-    gap: 40px;
   }
 
   .more-services-heading {
@@ -1569,7 +1575,7 @@ body {
   height: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Default 3 columns for 1300px+ */
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 1rem 0;
   margin: 0 auto;
   
@@ -1582,9 +1588,6 @@ body {
 }
 
 
-.more-services-container{
-  gap: 10px;
-}
 
 
 
