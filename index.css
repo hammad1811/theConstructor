@@ -1380,6 +1380,9 @@ body {
 }
 
 
+
+
+
 @media (max-width: 550px) {
 
 
@@ -2146,6 +2149,10 @@ body {
   font-size: 0.3rem;
   color: #8F8F8F;
   margin-top: 0.3rem;
+}
+.fa-paper-plane{
+  padding-right: 3px;
+  font-size: 1rem;
 }
 
 
