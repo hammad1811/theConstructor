@@ -31,7 +31,7 @@ body {
   z-index: 1000;
 }
 
-/* Top Navigation (nav1) */
+
 .nav1 {
   width: 100%;
   height: 2.6875rem;
@@ -313,7 +313,7 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 4.0625rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 3.75rem;
   letter-spacing: 0%;
@@ -326,6 +326,7 @@ body {
   font-weight: 400;
   width: 100%;
   height: 100%;
+  line-height: 1.3rem;
 }
 
 .hero-btns {
@@ -402,7 +403,7 @@ body {
   color: #222222;
   font-weight: 500;
   letter-spacing: 0px;
-  line-height: 1.875rem;
+  line-height: 1.85rem;
 }
 
 .who-we-are-heading span {
@@ -415,8 +416,8 @@ body {
 
 .section-sub-title {
   font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.4375rem;
+  font-size: 1rem;
+  line-height: 1.3rem;
   letter-spacing: 0%;
   text-align: center;
   height: 8.75rem;
@@ -459,16 +460,16 @@ body {
 }
 
 .vision-header h1 {
-  font-size: 2.125rem;
+  font-size: 2.75rem;
   font-weight: 500;
-  line-height: 4.375rem;
+  line-height: 1.85rem;
   letter-spacing: 0%;
 }
 
 .vision-paragraph {
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.4375rem;
+  line-height: 1.3rem;
   letter-spacing: 0%;
   color: #8F8F8F;
 }
@@ -532,7 +533,7 @@ body {
 
 .process-heading p {
   font-size: 1rem;
-  line-height: 1.75rem;
+  line-height: 1.3rem;
   letter-spacing: 0%;
   font-weight: 400;
   color: #8F8F8F;
@@ -568,8 +569,8 @@ body {
 }
 
 .step-content p {
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
   letter-spacing: 0%;
   font-weight: 400;
   color: #8F8F8F;
@@ -611,7 +612,7 @@ body {
   font-weight: 500;
   margin-bottom: 0.625rem;
   text-align: left;
-  line-height: 1.875rem;
+  line-height: 1.85rem;
   letter-spacing: 0%;
 }
 
@@ -621,7 +622,7 @@ body {
   margin-bottom: 1.25rem;
   color: #d1d1d1;
   text-align: left;
-  line-height: 1.5625rem;
+  line-height: 1.5rem;
   letter-spacing: 0%;
 }
 
@@ -688,7 +689,7 @@ body {
   font-weight: 500;
   line-height: 100%;
   letter-spacing: 0%;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
 }
 
 .service-align h3 {
@@ -706,9 +707,9 @@ body {
 }
 
 .service-card p {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   color: #8F8F8F;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 /* Next Section */
@@ -732,7 +733,7 @@ body {
   font-size: 1rem;
   margin-bottom: 2.5rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 1.3rem;
   height: 1.75rem;
   display: flex;
   justify-content: center;
@@ -773,7 +774,7 @@ body {
 
 .ceo-card h3 {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding-top: 1.25rem;
 }
 
@@ -781,7 +782,7 @@ body {
   font-weight: 500;
   color: black;
   margin-bottom: 0.625rem;
-  font-size: 1.375rem;
+  font-size: 1.3rem;
   font-family: 'Clash Display', sans-serif;
 }
 
@@ -789,7 +790,7 @@ body {
   font-size: 1rem;
   color: #8F8F8F;
   padding-top: 1.5625rem;
-  line-height: 2.0625rem;
+  line-height: 1.3rem;
   letter-spacing: 0%;
   position: relative;
   font-weight: 400;
@@ -839,7 +840,7 @@ body {
   font-size: 2.75rem;
   font-weight: 500;
   color: white;
-  line-height: 1.875rem;
+  line-height: 1.85rem;
   letter-spacing: 0%;
 }
 
@@ -849,7 +850,6 @@ body {
   align-items: center;
   gap: 1.25rem;
   margin: 1.875rem 0;
-  font-size: 0.875rem;
   width: 100%;
   padding-top: 2.5rem;
 }
@@ -1108,7 +1108,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
   color: #8F8F8F;
-  line-height: 160%;
+  line-height: 1.3rem;
   text-align: left;
 }
 
@@ -1279,7 +1279,7 @@ body {
 }
 
 .footer-col p {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   line-height: 100%;
   color: #8F8F8F;
   font-weight: 500;
@@ -1292,7 +1292,7 @@ body {
 }
 
 .sub-col p {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   line-height: 100%;
   color: #8F8F8F;
   font-weight: 500;
@@ -1346,7 +1346,7 @@ body {
 
 .footer-nav a {
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   text-decoration: none;
   text-transform: uppercase;
   line-height: 100%;
@@ -1358,7 +1358,7 @@ body {
 }
 
 .copyright {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: white;
 }
 
@@ -1424,7 +1424,7 @@ body {
 
   .contact-item span {
     font-weight: 500;
-    font-size: 0.645rem;
+    font-size: 0.65rem;
     line-height: 0.7738rem;
     letter-spacing: 0%;
   }
@@ -1489,11 +1489,11 @@ body {
 
   .hero-content-container {
     left: 50%;
-    top: 22%;
+    top: 25%;
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 90%;
-    height: 228px;
+    height: auto;
     gap: 28px;
   }
 
@@ -1517,11 +1517,11 @@ body {
   }
 
   .hero-content p {
-    font-size: 12px;
-    line-height: 13.6px;
+    font-size: 1rem;
+    line-height: 1.2rem;
     letter-spacing: 0%;
     font-weight: 400;
-    height: 41px;
+    height: auto;
     width: 100%;
 
   }
@@ -1537,7 +1537,7 @@ body {
   .hero-button1,
   .hero-button2 {
     width: 100%;
-    font-size: 0.83rem;
+    font-size: 0.96rem;
     padding: 10px 10px;
     /* white-space: nowrap; */
   }
@@ -1562,12 +1562,12 @@ body {
   }
 
   .who-we-are-heading h1 {
-    font-size: 2.1875rem;
+    font-size: 2rem;
     padding-bottom: 0.3125rem;
   }
 
   .who-we-are-heading span {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     line-height: 0.2025rem;
   }
 
@@ -1575,8 +1575,8 @@ body {
     line-height: 1.4;
     height: auto;
     width: 100%;
-    font-size: 0.8125rem;
-    line-height: 1.125rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
   }
 
   .vision {
@@ -1596,13 +1596,13 @@ body {
   }
 
   .vision-header h1 {
-    font-size: 1.875rem;
+    font-size: 2rem;
     line-height: 2.6363rem;
   }
 
   .vision-paragraph {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
   }
 
   .vision-image {
@@ -1652,15 +1652,15 @@ body {
 
   .process-heading h1 {
     font-weight: 500;
-    font-size: 1.8125rem;
+    font-size: 2rem;
     line-height: 1.8869rem;
     letter-spacing: 0%;
   }
 
   .process-heading p {
     font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.125rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
     letter-spacing: 0%;
     color: #8F8F8F;
   }
@@ -1688,8 +1688,8 @@ body {
   }
 
   .step-content p {
-    font-size: 0.75rem;
-    line-height: 0.75rem;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
     letter-spacing: 0%;
   }
 
@@ -1713,15 +1713,15 @@ body {
   }
 
   .services-text h1 {
-    font-size: 1.875rem;
+    font-size: 2rem;
     line-height: 1.875rem;
     text-align: center;
     margin-bottom: 0%;
   }
 
   .services-text p {
-    font-size: 0.7rem;
-    line-height: 1.125rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
     text-align: center;
     margin-bottom: 0.9375rem;
   }
@@ -1736,7 +1736,7 @@ body {
   .service-align h2,
   .service-align h3,
   .service-align span {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .icon-div {
@@ -1746,25 +1746,25 @@ body {
 
   .service-card p {
     font-weight: 500;
-    line-height: 133%;
+    line-height: 1.2rem;
     letter-spacing: 0%;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
   }
 
 
 
 
   .ceo-section h1 {
-    font-size: 2.1875rem;
+    font-size: 2rem;
   }
 
   .subheading {
     width: 100%;
     padding: 0 1.25rem;
     height: auto;
-    line-height: 0.9375rem;
+    line-height: 1.2rem;
     margin-bottom: 1.875rem;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   .ceo-cards {
@@ -1783,17 +1783,21 @@ body {
   }
 
   .ceo-card p {
-    font-size: 1.125rem;
+    font-size: 1rem;
+  }
+
+  .ceo-card h3{
+    padding-top: 10px;
   }
 
   .title {
-    font-size: 1.125rem;
+    font-size: 1rem;
     margin-bottom: 0.9375rem;
   }
 
   .message {
-    font-size: 0.9375rem;
-    line-height: 1.75rem;
+    font-size: 0.8rem !important ;
+    line-height: 1.2rem;
     padding-top: 0.625rem;
   }
 
@@ -1822,9 +1826,9 @@ body {
   }
 
   .project-header h2 {
-    font-size: 1.875rem;
+    font-size: 2rem;
     font-weight: 500;
-    line-height: 1.0138rem;
+    line-height: 1.5rem;
     letter-spacing: 0%;
   }
 
@@ -1928,13 +1932,13 @@ body {
 }
 
 .testimonial-header h2 {
-  font-size: 1.875rem;
+  font-size: 2rem;
   text-align: center;
 }
 
 .testimonial-header p {
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   letter-spacing: 0%;
   line-height: 160%;
   font-weight: 400;
@@ -1962,7 +1966,7 @@ body {
 
 .testimonial-card p {
   text-align: left;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   line-height: 160%;
   letter-spacing: 0%;
   font-weight: 500;
@@ -1989,12 +1993,12 @@ body {
 }
 
 .client-info strong {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   display: flex;
 }
 
 .client-info p {
-  font-size: 0.625rem;
+  font-size: 0.6rem;
 }
 
 .rating {
@@ -2046,7 +2050,7 @@ body {
 }
 
 .footer-desc {
-  font-size: 0.5625rem;
+  font-size: 0.6rem;
   line-height: 0.75rem;
   font-weight: 500;
   letter-spacing: 0%;
@@ -2088,12 +2092,12 @@ body {
 }
 
 .footer-col h4 {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   padding-bottom: 0.625rem;
 }
 
 .footer-col p {
-  font-size: 0.4375rem;
+  font-size: 0.47rem;
   gap: 0.241875rem;
   text-align: left;
   width: 100%;
@@ -2136,13 +2140,13 @@ body {
 }
 
 .footer-nav a {
-  font-size: 0.375rem;
+  font-size: 0.4rem;
   line-height: 100%;
   letter-spacing: 0%;
 }
 
 .copyright {
-  font-size: 0.375rem;
+  font-size: 0.4rem;
   padding-top: 0.625rem;
 }
   .powered-by {
