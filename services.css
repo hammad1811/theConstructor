@@ -793,6 +793,7 @@ body {
   justify-content: left;
   gap: 0.625rem;
   text-align: left;
+    line-height: 0.9rem;
 }
 
 .sub-col p {
@@ -1281,6 +1282,7 @@ body {
   gap: 0.241875rem;
   text-align: left;
   width: 100%;
+    line-height: 0.55rem;
 }
 
 .footer-col i {
