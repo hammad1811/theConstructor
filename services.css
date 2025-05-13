@@ -389,9 +389,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 35px;
   width: 100%;
-  padding: 60px 0;
+  padding: 35px 0;
   background-color: #f1f1f1;
 }
 
@@ -504,12 +504,12 @@ body {
 }
 
 .service-records-container {
-  width: 80%;
+  width: 90%;
   height: 15.7203rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.875rem;
+  gap: 1rem;
 }
 
 .record-info {
@@ -567,7 +567,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .more-services-container {
@@ -576,7 +576,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .more-services-heading {
@@ -610,16 +610,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.25rem;
+  gap: 2rem;
 }
 
 .more-service-item {
   width: 20.4375rem;
-  height: 15rem;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 1.7213rem;
+  gap: 1rem;
   text-align: center;
 }
 
@@ -747,7 +747,7 @@ body {
 
 .footer-columns {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   height: auto;
   width: 80%;
@@ -885,6 +885,7 @@ body {
 .footer-col i {
   font-size: 1.2rem;
   color: white;
+  width: 1.2rem;
 }
 
 
@@ -1015,7 +1016,7 @@ body {
   .services-container {
     width: 100%;
     gap: 10px;
-    padding: 30px 0;
+    padding: 10px 0;
   }
 
 
@@ -1091,7 +1092,7 @@ body {
 
 .service-records {
   height: auto;
-  padding: 2.5rem 0;
+  padding: 1rem 0;
 }
 
 .service-records-container {
@@ -1106,7 +1107,7 @@ body {
   width: 90%;
   height: auto;
   gap: 0.9375rem;
-  padding: 0.9375rem 0;
+  padding: 0.5rem 0;
 }
 
 .record-info-heading {
@@ -1152,7 +1153,7 @@ body {
   .more-services-heading {
     width: 100%;
     height: auto;
-    gap: 5px;
+    gap: 0px;
   }
 
   .more-services-heading h1 {
@@ -1176,8 +1177,8 @@ body {
   .more-service-item {
     width: 100%;
     height: auto;
-    padding: 20px 0;
-    gap: 15px;
+    padding: 5px 0;
+    gap: 12px;
   }
 
   .more-service-item img {
@@ -1254,9 +1255,9 @@ body {
 }
 
 .footer-columns {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+   align-items: start;
+    justify-content: space-between;
   gap: 0.5rem;
   height: auto;
   width: 92%;
@@ -1283,6 +1284,7 @@ body {
 
 .footer-col i {
   font-size: 0.7rem;
+    width: 0.6rem;
 }
 .email-form {
   display: flex;
@@ -1575,7 +1577,6 @@ body {
   height: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Default 3 columns for 1300px+ */
-  gap: 1.5rem;
   padding: 1rem 0;
   margin: 0 auto;
   

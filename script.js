@@ -380,43 +380,55 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// Get all project-info-icon elements
-const projectIcons = document.querySelectorAll(".project-info-icon img");
-const modal = document.createElement("div");
-modal.className = "modal";
+// List of sections to apply modal functionality
+const sections = [".projects-section", ".project-catagory"];
 
-// Modal structure
-modal.innerHTML = `
-  <div class="modal-content">
-    <button class="modal-close">&times;</button>
-    <img src="" alt="Full Project Image">
-  </div>
-`;
+// Iterate over each section
+sections.forEach((sectionSelector) => {
+  const section = document.querySelector(sectionSelector);
 
-document.body.appendChild(modal);
+  if (section) {
+    // Get all project-info-icon elements within this section
+    const projectIcons = section.querySelectorAll(".project-info-icon img");
 
-// References
-const modalImage = modal.querySelector("img");
-const modalClose = modal.querySelector(".modal-close");
+    // Create a shared modal if not already created
+    let modal = document.querySelector(".modal");
+    if (!modal) {
+      modal = document.createElement("div");
+      modal.className = "modal";
+      modal.innerHTML = `
+        <div class="modal-content">
+          <button class="modal-close">&times;</button>
+          <img src="" alt="Full Project Image">
+        </div>
+      `;
+      document.body.appendChild(modal);
+    }
 
-// Show Modal on Click
-projectIcons.forEach(icon => {
-  icon.addEventListener("click", (e) => {
-    const imgSrc = e.target.closest(".project-card").querySelector("img").src;
-    modalImage.src = imgSrc; // Set the image source
-    modal.style.display = "flex"; // Show modal
-  });
-});
+    // References for modal elements
+    const modalImage = modal.querySelector("img");
+    const modalClose = modal.querySelector(".modal-close");
 
-// Close Modal on Click
-modalClose.addEventListener("click", () => {
-  modal.style.display = "none";
-});
+    // Show Modal on Icon Click
+    projectIcons.forEach((icon) => {
+      icon.addEventListener("click", (e) => {
+        const imgSrc = e.target.closest(".project-card").querySelector("img").src;
+        modalImage.src = imgSrc; // Set the image source
+        modal.style.display = "flex"; // Show modal
+      });
+    });
 
-// Close Modal on Background Click
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.style.display = "none";
+    // Close Modal on Close Button Click
+    modalClose.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    // Close Modal on Background Click
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
   }
 });
 
