@@ -263,42 +263,47 @@ document.addEventListener("DOMContentLoaded", () => {
   updateSlider();
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const carousel = document.querySelector(".testimonial-carousel");
   const dotsContainer = document.querySelector(".testimonial-dots");
   const cards = Array.from(carousel.children);
-  const cardWidth = cards[0].offsetWidth + 20; // Width + gap
-  const totalPages = Math.ceil(cards.length);
 
   // Create dots dynamically
-  for (let i = 0; i < totalPages; i++) {
+  cards.forEach((_, index) => {
     const dot = document.createElement("span");
     dot.classList.add("testimonial-dot");
-    if (i === 0) dot.classList.add("active"); // First dot active by default
-    dotsContainer.appendChild(dot);
-
-    // Dot click event
+    if (index === 0) dot.classList.add("active");
+    
     dot.addEventListener("click", () => {
-      carousel.scrollTo({
-        left: i * cardWidth,
-        behavior: "smooth",
-      });
+      const card = cards[index];
+      const scrollLeft = card.offsetLeft - carousel.offsetLeft;
+      carousel.scrollTo({ left: scrollLeft, behavior: "smooth" });
     });
-  }
-
-  // Scroll event for syncing dots
-  carousel.addEventListener("scroll", () => {
-    const scrollPosition = carousel.scrollLeft;
-    const activeIndex = Math.round(scrollPosition / cardWidth);
-
-    Array.from(dotsContainer.children).forEach((dot, index) => {
-      dot.classList.toggle("active", index === activeIndex);
-    });
+    
+    dotsContainer.appendChild(dot);
   });
+
+  // Configure Intersection Observer
+  const observerOptions = {
+    root: carousel,
+    rootMargin: "0px",
+    threshold: 0.6 // Trigger when 60% of card is visible
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const activeIndex = cards.indexOf(entry.target);
+        dotsContainer.querySelectorAll(".testimonial-dot").forEach((dot, index) => {
+          dot.classList.toggle("active", index === activeIndex);
+        });
+      }
+    });
+  }, observerOptions);
+
+  // Observe each card
+  cards.forEach(card => observer.observe(card));
 });
-
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
