@@ -1642,10 +1642,6 @@ padding: 10px 0%;
     gap: 0.5rem;
   }
 
-  .email-form input {
-    padding: 0.5rem;
-    font-size: 0.7rem;
-  }
 
   .email-form button {
     padding: 0 0.7rem;
