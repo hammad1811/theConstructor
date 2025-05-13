@@ -103,8 +103,6 @@ document.querySelector('.hamburger-menu').addEventListener('click', function () 
 
 
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const gallery = document.querySelector(".projects-gallery");
   const projectCards = Array.from(gallery.querySelectorAll(".project-card"));
@@ -112,9 +110,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const backwardBtn = document.querySelector(".backward");
   const filterItems = Array.from(document.querySelectorAll(".filter-item"));
 
-  const cardsPerPage = 4; // Number of cards to display at a time
   let currentIndex = 0;
-  let activeFilter = "all"; // Default filter
+  let activeFilter = "all";
+  let cardsPerPage = window.innerWidth <= 550 ? 2 : 4; // Dynamic cards per page
 
   const getFilteredCards = () => {
     return projectCards.filter((card) => {
@@ -122,15 +120,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
+  const updateCardsPerPage = () => {
+    cardsPerPage = window.innerWidth <= 550 ? 2 : 4;
+  };
+
   const updateGallery = () => {
+    updateCardsPerPage();
     const filteredCards = getFilteredCards();
 
-    // Hide all cards
     projectCards.forEach((card) => {
       card.style.display = "none";
     });
 
-    // Show filtered cards within the current index range
     filteredCards.forEach((card, index) => {
       if (index >= currentIndex && index < currentIndex + cardsPerPage) {
         card.style.display = "block";
@@ -145,21 +146,30 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   };
 
-  // Event listener for filter buttons
+  // Handle window resize
+  window.addEventListener("resize", () => {
+    const prevCardsPerPage = cardsPerPage;
+    updateCardsPerPage();
+    
+    // Adjust currentIndex if cards per page changes
+    if (prevCardsPerPage !== cardsPerPage) {
+      currentIndex = Math.floor(currentIndex / cardsPerPage) * cardsPerPage;
+      updateGallery();
+    }
+  });
+
+  // Existing filter event listeners
   filterItems.forEach((filterItem) => {
     filterItem.addEventListener("click", (event) => {
       activeFilter = event.target.dataset.category;
-      currentIndex = 0; // Reset to first page on filter change
-
-      // Update active filter UI
+      currentIndex = 0;
       filterItems.forEach((item) => item.classList.remove("active"));
       filterItem.classList.add("active");
-
       updateGallery();
     });
   });
 
-  // Event listener for forward button
+  // Navigation buttons
   forwardBtn.addEventListener("click", () => {
     const filteredCards = getFilteredCards();
     if (currentIndex + cardsPerPage < filteredCards.length) {
@@ -168,7 +178,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Event listener for backward button
   backwardBtn.addEventListener("click", () => {
     if (currentIndex > 0) {
       currentIndex -= cardsPerPage;
@@ -176,10 +185,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Initialize gallery display
+  // Initial setup
   updateGallery();
 });
-
 
 
 
