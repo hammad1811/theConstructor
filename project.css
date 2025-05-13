@@ -1388,7 +1388,7 @@ body {
   .email-form button {
     background-color: #FFFFFF1A;
     border: none;
-    padding: 0 0.3125rem;
+    padding: 0 0.7rem;
     border-radius: 0 0.25rem 0.25rem 0;
     cursor: pointer;
     font-size: 0.625rem;
