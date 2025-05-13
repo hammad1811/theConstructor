@@ -537,6 +537,7 @@ body {
   font-size: 2.75rem;
   margin-bottom: 0.9375rem;
   letter-spacing: 0%;
+  line-height: 2.75rem;
 }
 
 .process-heading p {
@@ -1703,7 +1704,7 @@ body {
   .process-steps {
     width: 90%;
     height: auto;
-    gap: 1.375rem;
+    gap: 1rem;
   }
 
   .process-heading {
@@ -1865,11 +1866,13 @@ body {
 
   .quote-mark,
   .quote-mark2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .quote-mark2 {
-    padding-right: 1.875rem;
+    padding-right: 1.5rem;
+    height: 4px;
+    left: 5.2rem;
   }
 
 
