@@ -147,6 +147,7 @@ body {
   font-weight: 400;
   font-size: 1rem;
   transition: color 0.3s;
+   font-family: 'Clash Display', sans-serif;
 }
 
 .nav-links a.active-link,
@@ -170,6 +171,7 @@ body {
   z-index: 1000;
   border-radius: 0 0 0.5rem 0.5rem;
   animation: fadeIn 0.3s ease-out;
+    font-family: 'Clash Display', sans-serif;
 }
 
 .mobile-menu-links ul {
@@ -977,7 +979,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  height: 2.875rem;
+  height: auto;
 }
 
 .view-all-btn {
@@ -1362,6 +1364,7 @@ body {
   text-transform: uppercase;
   line-height: 100%;
   letter-spacing: 0%;
+  font-family: 'Clash Display', sans-serif;
 }
 
 .footer-nav a:hover {
@@ -1377,6 +1380,10 @@ body {
   font-size: 0.65rem;
   color: #8F8F8F;
   margin-top: 0.3rem;
+}
+
+.powered-by:hover{
+  color: #f9c419;
 }
 
 .footer-right {
@@ -1965,7 +1972,7 @@ body {
 
   .footer-controls {
     width: 80%;
-    height: 2.125rem;
+    height: auto;
     padding-top: 1rem;
   }
 

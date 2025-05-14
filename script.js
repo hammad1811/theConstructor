@@ -23,41 +23,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
 const navLinks = document.querySelectorAll('.nav-links a');
-const currentPath = window.location.pathname.split('/').pop();
-
+const currentPath = window.location.pathname.split('/').pop() || 'index.html';
 
 navLinks.forEach(link => {
+ 
+  const linkPath = link.getAttribute('href')
+    .replace(/^\.?\//, '')
+    .toLowerCase();
 
-  const linkPath = link.getAttribute('href').replace('./', '');
-
-  if (linkPath === currentPath) {
-
+  // Special case for home link
+  if ((currentPath === '' || currentPath === 'index.html') && 
+      (linkPath === '' || linkPath === 'index.html')) {
     link.classList.add('active-link');
   } else {
-
-    link.classList.remove('active-link');
+    link.classList[linkPath === currentPath ? 'add' : 'remove']('active-link');
   }
 });
 
-
-
-const MobileNavLinks = document.querySelectorAll('.mobile-active-links a');;
+// Repeat the same logic for mobile links
+const MobileNavLinks = document.querySelectorAll('.mobile-active-links a');
 
 MobileNavLinks.forEach(link => {
+  const linkPath = link.getAttribute('href')
+    .replace(/^\.?\//, '')
+    .toLowerCase();
 
-  const linkPath = link.getAttribute('href').replace('./', '');
-  if (linkPath === currentPath) {
+  if ((currentPath === '' || currentPath === 'index.html') && 
+      (linkPath === '' || linkPath === 'index.html')) {
     link.classList.add('mobile-active-link');
   } else {
-
-    link.classList.remove('mobile-active-link');
+    link.classList[linkPath === currentPath ? 'add' : 'remove']('mobile-active-link');
   }
 });
-
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -138,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Update button states
+    
     backwardBtn.classList.toggle("disabled", currentIndex === 0);
     forwardBtn.classList.toggle(
       "disabled",
@@ -146,19 +144,18 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   };
 
-  // Handle window resize
   window.addEventListener("resize", () => {
     const prevCardsPerPage = cardsPerPage;
     updateCardsPerPage();
     
-    // Adjust currentIndex if cards per page changes
+    
     if (prevCardsPerPage !== cardsPerPage) {
       currentIndex = Math.floor(currentIndex / cardsPerPage) * cardsPerPage;
       updateGallery();
     }
   });
 
-  // Existing filter event listeners
+  
   filterItems.forEach((filterItem) => {
     filterItem.addEventListener("click", (event) => {
       activeFilter = event.target.dataset.category;
@@ -169,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Navigation buttons
+
   forwardBtn.addEventListener("click", () => {
     const filteredCards = getFilteredCards();
     if (currentIndex + cardsPerPage < filteredCards.length) {
@@ -185,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Initial setup
+  
   updateGallery();
 });
 
@@ -223,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateImage();
   });
 
-  // Initialize the first image
+  
   updateImage();
 });
 
@@ -402,7 +399,7 @@ sections.forEach((sectionSelector) => {
 
   if (section) {
     // Get all project-info-icon elements within this section
-    const projectIcons = section.querySelectorAll(".project-info-icon img");
+    const projectIcons = section.querySelectorAll(".project-info-icon");
 
     // Create a shared modal if not already created
     let modal = document.querySelector(".modal");
@@ -418,7 +415,7 @@ sections.forEach((sectionSelector) => {
       document.body.appendChild(modal);
     }
 
-    // References for modal elements
+ 
     const modalImage = modal.querySelector("img");
     const modalClose = modal.querySelector(".modal-close");
 
@@ -430,6 +427,7 @@ sections.forEach((sectionSelector) => {
         modal.style.display = "flex"; // Show modal
       });
     });
+
 
     // Close Modal on Close Button Click
     modalClose.addEventListener("click", () => {

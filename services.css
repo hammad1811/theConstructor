@@ -53,7 +53,6 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.875rem;
 }
 
 .contact-item img {
@@ -98,7 +97,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: white;
 }
 
 .container-nav2 {
@@ -147,6 +146,7 @@ body {
   font-weight: 400;
   font-size: 1rem;
   transition: color 0.3s;
+    font-family: 'Clash Display', sans-serif;
 }
 
 .nav-links a.active-link,
@@ -170,6 +170,7 @@ body {
   z-index: 1000;
   border-radius: 0 0 0.5rem 0.5rem;
   animation: fadeIn 0.3s ease-out;
+    font-family: 'Clash Display', sans-serif;
 }
 
 .mobile-menu-links ul {
@@ -190,6 +191,7 @@ body {
   border-radius: 0.375rem;
   transition: all 0.2s ease;
   display: block;
+    font-family: 'Clash Display', sans-serif;
 }
 
 .mobile-menu-links a:hover {
@@ -856,6 +858,7 @@ body {
   text-transform: uppercase;
   line-height: 100%;
   letter-spacing: 0%;
+  font-family: 'Clash Display', sans-serif;
 }
 
 .footer-nav a:hover {
@@ -871,6 +874,10 @@ body {
   font-size: 0.65rem;
   color: #8F8F8F;
   margin-top: 0.3rem;
+}
+
+.powered-by:hover{
+  color: #f9c419;
 }
 
 .footer-right {
